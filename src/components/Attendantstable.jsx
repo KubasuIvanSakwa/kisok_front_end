@@ -17,7 +17,7 @@ function Attendantstable({ Attendants }) {
 
   const handleScan = async (id) => {
     try {
-      await fetch("http://localhost:3000/scan", {
+      await fetch("https://plp-assignment-kiosk-sign-in-backend-1.onrender.com/scan", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id: id }),

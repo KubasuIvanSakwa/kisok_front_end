@@ -12,7 +12,7 @@ const AttendantsArray = useAttendants((state) => state.Attendants);
     fetchAttendants();
 
     // 2. Open the SSE connection to the backend
-    const sse = new EventSource('http://localhost:3000/stream');
+    const sse = new EventSource('https://plp-assignment-kiosk-sign-in-backend-1.onrender.com/stream');
 
     // 3. Listen for messages from the backend
     sse.onmessage = (event) => {
